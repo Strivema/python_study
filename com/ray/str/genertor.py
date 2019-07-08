@@ -3,7 +3,7 @@
 # @Time:  2019/7/9 12:28 AM
 # @Software: PyCharm
 import sys
-def main():
+def main_gen():
     f = [x for x in range(1, 10)]
     print(f)
     f = [x + y for x in 'ABCDE' for y in '1234567']
@@ -20,6 +20,16 @@ def main():
     print(sys.getsizeof(f))  # 相比生成式生成器不占用存储数据的空间
     print(f)
     for val in f:
+        print(val)
+def fib(n):
+    a, b = 0, 1
+    for x in range(n):
+        a, b = b, a + b
+        yield a
+
+
+def main():
+    for val in fib(20):
         print(val)
 
 
