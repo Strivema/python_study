@@ -79,5 +79,49 @@ def main_list():
     # 清空列表元素
     list1.clear()
     print(list1)
+
+
+def list_opreate():
+    fruits = ['grape', 'apple', 'strawberry', 'waxberry']
+    fruits += ['pitaya', 'pear', 'mango']
+    # 循环遍历列表元素
+    for fruit in fruits:
+        print(fruit.title())
+    print()
+    # 列表切片
+    fruits2 = fruits[1:4]
+    print(fruits2)
+    # fruit3 = fruits  # 没有复制列表只创建了新的引用
+    # 可以通过完整切片操作来复制列表
+    fruits3 = fruits[:]
+    print(fruits3)
+
+    fruits4 = fruits[-3:-1]
+    print('f4')
+    print(fruits4)
+    # 可以通过反向切片操作来获得倒转后的列表的拷贝
+
+    fruits5 = fruits[::-1]
+    print ('f5')
+    print (fruits5)
+
+def list_opr():
+    list1 = ['orange', 'apple', 'zoo', 'internationalization', 'blueberry']
+
+    list2 = list1.sort(reverse=True)
+
+    lis3 = sorted(list1)
+
+    list4 = sorted(list1,reverse=True)
+    list5 = sorted(list1,key=len)
+
+    print (list1)
+    print (list2)
+    print (lis3)
+    print (list4)
+    print (list5)
 if __name__ == '__main__':
-    main()
+    # main()
+    # main_list()
+    # list_opreate()
+    list_opr()
