@@ -12,7 +12,7 @@ def main_right():
     content = 'hello world'
     while True:
         os.system('cls')
-        print (content)
+        print(content)
         time.sleep(0.3)
         content = content[1:] + content[0]
 
@@ -90,7 +90,7 @@ def ring():
         index += 1
         index %= 30
     for person in persons:
-        print ('基' if person else '非')
+        print('基' if person else '非')
 
 
 if __name__ == '__main__':
