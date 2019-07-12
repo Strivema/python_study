@@ -4,7 +4,6 @@
 # @Software: PyCharm
 import json
 
-
 def main():
     f = None
     try:
